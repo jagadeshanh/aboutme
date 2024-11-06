@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{article}
+
+% Required packages
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{mathptmx}
+
+\renewcommand{\familydefault}{\sfdefault}
+\titleformat{\section}{\Large\bfseries\raggedright}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\raggedbottom
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\Huge \textbf{Jagadesha H}}\\[0.25cm]
+  \href{mailto:jagadeshanh@gmail.com}{\faEnvelope\ jagadeshanh@gmail.com} $|$
+  \href{tel:+919986021989}{\faPhone\ +91-9986021989} $|$
+  \href{https://www.linkedin.com/in/jagadeshanh/}{\faLinkedin\ LinkedIn} $|$
+  \href{https://github.com/jagadeshanh}{\faGithub\ GitHub}
+\end{center}
+
+% Address
+\begin{center}
+  \footnotesize
+  \textnormal{PKS Residency, 3J69+X36, Royal Enclave, Srirampura, Jakkur Post, Bengaluru, Karnataka 560064, India}
+\end{center}
+
+% Profile Summary
+\section*{Profile Summary}
+Full Stack Software Engineer with 10+ years of experience in scalable web applications, distributed systems, data engineering and cloud-native development. Architecting, coding, designing, and deploying end-to-end solutions that enhance performance, streamline processes, and deliver measurable business impact.
+
+% Technical Skills
+\section*{Technical Skills}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\begin{tabular}{@{}L{3cm}@{ : }L{12.5cm}@{}}
+  \textbf{Languages} & Python, JavaScript, Java, PHP, SQL \\
+  \textbf{Frameworks} & React.js, Vue.js, Node.js, FastAPI, Flask, Django, Laravel, Spring, RAG, LLM, GenAI, GraphQL, PyTest, Jest, Mocha, Selenium\\
+  \textbf{Data \& Cloud} & Spark, Kafka, Airflow, AWS, PostgreSQL, MySQL, MongoDB, Redis, ElasticSearch, Snowflake \\
+  \textbf{Tools \& DevOps} & Git, Docker, Kubernetes, Jenkins, Grafana, ELK Stack, Jira
+\end{tabular}
+
+% Experience
+\section*{Professional Experience}
+\noindent\input{companies/aipalette}
+\noindent\input{companies/dealersocket}
+\noindent\input{companies/conviva}
+\noindent\input{companies/compassitesinc.tex}
+\noindent\input{companies/happylocate.tex}
+\noindent\input{companies/macavv.tex}
+
+% Projects
+\section*{Projects}
+\textbf{\href{https://wildsonic.ai/}{Wildsonic}}
+\begin{itemize}[leftmargin=*]
+  \item A web based audio annotation tool for wildlife conservation, enabling collaborative spectrogram based annotations with D3.js, React, FFMPEG, Node.js, and Python.
+\end{itemize}
+
+% Awards & Certifications
+\section*{Awards \& Certifications}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{OdeToCode Hackathon Winner} \hfill DealerSocket\\
+    Awarded for winning a company-wide hackathon, demonstrating innovative solutions and technical skill.
+  \item \textbf{Two-time Star of the Month} \hfill DealerSocket\\
+    Recognized twice for outstanding contributions, dedication, and excellence in team projects.
+\end{itemize}
+
+% Education
+\section*{Education}
+\textbf{South Asian University} \hfill New Delhi, India\\
+M.Sc, Computer Science \hfill August 2012 - June 2014 \\
+\textbf{International Institute of Information Technology - Bangalore} \hfill Bangalore, India\\
+Post Graduate Diploma in Software Development \hfill August 2010 - July 2011
+
+\begin{center}
+  \fontsize{6pt}{7pt}\selectfont
+  \textit{Full Stack Development, Data Engineering, Frontend \& Backend, API Design, Problem Solving, Product Development}
+\end{center}
+
+\end{document}
